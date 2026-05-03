@@ -11,7 +11,7 @@ FULL_PAGE_LIST_FIXTURE = Path(__file__).parent / "fixtures" / "page_list_respons
 
 
 def _full_page_list_fixture() -> dict[str, Any]:
-    return json.loads(FULL_PAGE_LIST_FIXTURE.read_text())
+    return json.loads(FULL_PAGE_LIST_FIXTURE.read_text(encoding="utf-8"))
 
 
 def _page_list_fixture() -> dict[str, Any]:
